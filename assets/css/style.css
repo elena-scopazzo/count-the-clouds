@@ -1,101 +1,173 @@
+
+/* GENERAL */
+
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+@font-face {
+  font-family: "Pokemon GB";
+  src: url("/assets/font/pokemon-gb-font/PokemonGb-RAeo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-	overflow: hidden;
+  overflow: hidden;
+  height: 100vh;
+  background: #c9dbe9;
+  background: linear-gradient(to bottom, #8f8ff2 20%, #fff 100%);
+  font-family: "Pokemon GB", sans-serif;
+  font-optical-sizing: auto;
 }
 
-/* CLOUDS SECTION */ 
+/* CLOUDS SECTION */
 
-#clouds{
-	padding: 100px 0;
-	background: #c9dbe9;
-	background: linear-gradient(to bottom, #c9dbe9 40%, #fff 100%);
-    padding-top: 10%; 
+#clouds {
+  padding: 100px 0;
+  padding-top: 10%;
 }
 
 .cloud {
-	width: 200px; 
-    height: 60px;
-	background: #fff;
-	border-radius: 200px;
-	position: relative; 
+  width: 200px;
+  height: 60px;
+  background: #fff;
+  border-radius: 200px;
+  position: relative;
 }
 
-.cloud:before, .cloud:after {
-	content: '';
-	position: absolute; 
-	background: #fff;
-	width: 100px; 
-    height: 80px;
-	position: absolute; 
-    top: -15px; 
-    left: 10px;
-	border-radius: 100px;
-	transform: rotate(30deg);
+.cloud:before,
+.cloud:after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  border-radius: 100px;
+  transform: rotate(30deg);
 }
 
 .cloud:after {
-	width: 120px; 
-    height: 120px;
-	top: -55px; 
-    left: auto; 
-    right: 15px;
+  width: 120px;
+  height: 120px;
+  top: -55px;
+  left: auto;
+  right: 15px;
 }
 
 .x1 {
-    animation: moveclouds 34s linear infinite;
-    top: -60px;
-    animation-delay: 0s;
+  animation: moveclouds 34s linear infinite;
+  top: -60px;
+  animation-delay: 0s;
 }
 
 .x2 {
-    animation: moveclouds 30s linear infinite;
-    transform: scale(0.6);
-    opacity: 0.6;
-    top: -50px;
-    animation-delay: -5s;
+  animation: moveclouds 30s linear infinite;
+  transform: scale(0.6);
+  opacity: 0.6;
+  top: -50px;
+  animation-delay: -5s;
 }
 
 .x3 {
-    animation: moveclouds 35s linear infinite;
-    transform: scale(0.8);
-    opacity: 0.8;
-    top: -66px;
-    animation-delay: -30s;
+  animation: moveclouds 35s linear infinite;
+  transform: scale(0.8);
+  opacity: 0.8;
+  top: -66px;
+  animation-delay: -30s;
 }
 
 .x4 {
-    animation: moveclouds 32s linear infinite;
-    transform: scale(0.75);
-    opacity: 0.75;
-    top: -155px;
-    animation-delay: -15s;
+  animation: moveclouds 32s linear infinite;
+  transform: scale(0.75);
+  opacity: 0.75;
+  top: -155px;
+  animation-delay: -15s;
 }
 
 .x5 {
-    animation: moveclouds 38s linear infinite;
-    transform: scale(0.8);
-    opacity: 0.8;
-    top: -320px;
-    animation-delay: -29s;
+  animation: moveclouds 38s linear infinite;
+  transform: scale(0.8);
+  opacity: 0.8;
+  top: -320px;
+  animation-delay: -29s;
 }
 
 .x6 {
-    animation: moveclouds 31s linear infinite;
-    transform: scale(0.6);
-    opacity: 0.83;
-    top: -350px;
-    animation-delay: -18s;
+  animation: moveclouds 32s linear infinite;
+  transform: scale(0.6);
+  opacity: 0.83;
+  top: -350px;
+  animation-delay: -18s;
 }
 
 @keyframes moveclouds {
-    0% {
-        left: 110%;
-    }
-    100% {
-        left: -20%;
-    }
+  0% {
+    left: 110%;
+  }
+  100% {
+    left: -20%;
+  }
+}
+
+/* COUNTER SECTION */
+
+#counter-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Assicura che la sezione occupi l'intera altezza della viewport */
+  padding: 20px;
+  box-sizing: border-box;}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Pokemon GB", sans-serif;
+  margin-bottom: 40px; /* Aggiunge spazio tra il titolo e il counter */
+  z-index: 1;
+  font-size: 4.3vh;
+  color: #8f8ff2;
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000,
+    -2px -2px 0 #000,  
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000;
+}
+
+.title-bottom {
+  margin-top: 5px;
+}
+
+.counter-container {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: "Pokemon GB", sans-serif;
+  }
+
+.button-container {
+  display: flex;
+  gap: 10px; 
+}
+
+.button{
+  margin: 0 5px; 
 }
