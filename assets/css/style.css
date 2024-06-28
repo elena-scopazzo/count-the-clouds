@@ -14,6 +14,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Bitmgothic";
+  src: url("/assets/font/pokemon-gb-font/Bitmgothic/Bitmgothic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   overflow: hidden;
   height: 100vh;
@@ -199,7 +206,8 @@ body {
 }
 
 .display {
-  font-size: 5vh;
+  font-size: 7vh;
+  font-family: "Bitmgothic";
   margin-top: 5%;
   margin-bottom: 5%;
  color: #8f8ff2;
