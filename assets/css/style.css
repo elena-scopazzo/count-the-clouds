@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 /* GENERAL */
 
 * {
@@ -141,7 +143,7 @@ body {
   align-items: center;
   text-align: center;
   font-family: "Pokemon GB", sans-serif;
-  font-size: 4.3vh;
+  font-size: 4.5vh;
   color: #8f8ff2;
   text-shadow:
     -1px -1px 0 #000,
@@ -153,7 +155,7 @@ body {
     -2px 2px 0 #000, 
     2px 2px 0 #000;
   margin-bottom: 20px;
-  margin-top: 10%;
+  margin-top: 45%;
 }
 
 .title-bottom {
@@ -173,4 +175,42 @@ body {
   width: 100%;
   max-width: 300px; 
   margin-top: 10px;
+}
+
+.button {
+  font-family: "VT323", monospace;
+  text-align: center;
+	margin:5px;
+  padding: 9px 30px ;
+  background-color: #f7f7f7;
+  color: #8f8ff2;
+	border-radius: 7px;
+  box-shadow: 0 .2em #8f8ff2; 
+  cursor: pointer;
+  border-color: #8f8ff2;
+  font-size: 30px;
+
+}
+
+.button:active {
+  box-shadow: none;
+	position: relative;
+	top: .2em;
+}
+
+.display {
+  font-size: 5vh;
+  margin-top: 5%;
+  margin-bottom: 5%;
+ color: #8f8ff2;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000, 
+    1px 1px 0 #000, 
+    -2px -2px 0 #000, 
+    2px -2px 0 #000, 
+    -2px 2px 0 #000, 
+    2px 2px 0 #000;
+
 }
