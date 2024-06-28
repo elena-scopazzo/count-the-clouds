@@ -1,11 +1,9 @@
-
 /* GENERAL */
 
 * {
   margin: 0;
   padding: 0;
 }
-
 
 @font-face {
   font-family: "Pokemon GB";
@@ -21,9 +19,21 @@ body {
   background: linear-gradient(to bottom, #8f8ff2 20%, #fff 100%);
   font-family: "Pokemon GB", sans-serif;
   font-optical-sizing: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* CLOUDS SECTION */
+
+#clouds-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 #clouds {
   padding: 100px 0;
@@ -110,6 +120,7 @@ body {
   0% {
     left: 110%;
   }
+
   100% {
     left: -20%;
   }
@@ -117,5 +128,49 @@ body {
 
 /* COUNTER SECTION */
 
-#counter-section {   display: flex;   justify-content: center;   align-items: center; }  .title {   display: flex;   flex-direction: column;   align-items: center;   text-align: center;   font-family: "Pokemon GB", sans-serif;   margin-top: -43%;   z-index: 1;   font-size: 4.3vh;   color: #8f8ff2;   text-shadow:    -1px -1px 0 #000,     1px -1px 0 #000,  -1px  1px 0 #000,   1px  1px 0 #000,  -2px -2px 0 #000,     2px -2px 0 #000,  -2px  2px 0 #000,   2px  2px 0 #000; }   
-.title-bottom {   margin-top: 5px;  }
+#counter-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Pokemon GB", sans-serif;
+  font-size: 4.3vh;
+  color: #8f8ff2;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000, 
+    1px 1px 0 #000, 
+    -2px -2px 0 #000, 
+    2px -2px 0 #000, 
+    -2px 2px 0 #000, 
+    2px 2px 0 #000;
+  margin-bottom: 20px;
+  margin-top: 10%;
+}
+
+.title-bottom {
+  margin-top: 5px;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 300px; 
+  margin-top: 10px;
+}
