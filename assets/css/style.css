@@ -24,8 +24,6 @@
 body {
   overflow: hidden;
   height: 100vh;
-  background: #c9dbe9;
-  background: linear-gradient(to bottom, #8f8ff2 20%, #fff 100%);
   font-family: "Pokemon GB", sans-serif;
   font-optical-sizing: auto;
   display: flex;
@@ -151,16 +149,7 @@ body {
   text-align: center;
   font-family: "Pokemon GB", sans-serif;
   font-size: 4.5vh;
-  color: #8f8ff2;
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000, 
-    1px 1px 0 #000, 
-    -2px -2px 0 #000, 
-    2px -2px 0 #000, 
-    -2px 2px 0 #000, 
-    2px 2px 0 #000;
+  color: #ffffff;
   margin-bottom: 20px;
   margin-top: 45%;
 }
@@ -189,12 +178,11 @@ body {
   text-align: center;
 	margin:5px;
   padding: 9px 30px ;
-  background-color: #f7f7f7;
-  color: #8f8ff2;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333333;
 	border-radius: 7px;
-  box-shadow: 0 .2em #8f8ff2; 
   cursor: pointer;
-  border-color: #8f8ff2;
+  border-color: #787879;
   font-size: 30px;
 
 }
@@ -210,15 +198,7 @@ body {
   font-family: "Bitmgothic";
   margin-top: 5%;
   margin-bottom: 5%;
- color: #8f8ff2;
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000, 
-    1px 1px 0 #000, 
-    -2px -2px 0 #000, 
-    2px -2px 0 #000, 
-    -2px 2px 0 #000, 
-    2px 2px 0 #000;
+ color: #ffffff;
+
 
 }
