@@ -38,7 +38,7 @@ function reset() {
 }
 
 const colors = [
- "#3E62FC",
+ "#4A6CFC",
  "#8f8ff2",
 "#FF9966",
 "#5EBAA0"

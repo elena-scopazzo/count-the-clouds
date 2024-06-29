@@ -150,6 +150,11 @@ body {
   font-family: "Pokemon GB", sans-serif;
   font-size: 4.5vh;
   color: #ffffff;
+  text-shadow: 
+    -2px -2px 0 #808080,  
+    2px -2px 0 #808080,
+    -2px 2px 0 #808080,
+    2px 2px 0 #808080;
   margin-bottom: 20px;
   margin-top: 45%;
 }
@@ -199,6 +204,10 @@ body {
   margin-top: 5%;
   margin-bottom: 5%;
  color: #ffffff;
-
+ text-shadow: 
+ -2px -2px 0 #808080,  
+ 2px -2px 0 #808080,
+ -2px 2px 0 #808080,
+ 2px 2px 0 #808080;
 
 }
