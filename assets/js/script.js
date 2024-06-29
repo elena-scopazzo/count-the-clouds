@@ -5,8 +5,8 @@ const buttonPlus = document.querySelector(".button.plus");
 const buttonReset = document.querySelector(".button.reset"); 
 const buttons = document.querySelectorAll(".button");
 
-let count = 0;
 
+let count = 0;
 let currentColorIndex = 0;
 
 // Aggiornare il display 
@@ -37,11 +37,14 @@ function reset() {
     changeBackgroundColor();
 }
 
+// Eventi per colori background e ombre
+
 const colors = [
  "#4A6CFC",
  "#8f8ff2",
 "#FF9966",
-"#5EBAA0"
+"#5EBAA0",
+"#D797E7"
 ];
 
 function changeBackgroundColor() {
