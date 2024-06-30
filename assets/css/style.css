@@ -2,6 +2,11 @@
 
 /* GENERAL */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 @font-face {
   font-family: "Pokemon GB";
   src: url("/assets/font/pokemon-gb-font/PokemonGb-RAeo.ttf") format("truetype");
@@ -16,15 +21,11 @@
   font-style: normal;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   overflow: hidden;
   height: 100vh;
-  font-family: "Pokemon GB", "Courier New", sans-serif;
+  font-family: "Pokemon GB", sans-serif;
+  font-optical-sizing: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,6 +39,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 
 #clouds {
@@ -60,6 +62,7 @@ body {
   background: #fff;
   width: 100px;
   height: 80px;
+  position: absolute;
   top: -15px;
   left: 10px;
   border-radius: 100px;
