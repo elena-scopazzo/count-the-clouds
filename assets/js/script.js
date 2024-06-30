@@ -1,4 +1,4 @@
-// Elementi del DOM
+// DOM Elemnts
 const display = document.querySelector(".display");
 const buttonMinus = document.querySelector(".button.minus"); 
 const buttonPlus = document.querySelector(".button.plus"); 
@@ -9,12 +9,12 @@ const buttons = document.querySelectorAll(".button");
 let count = 0;
 let currentColorIndex = 0;
 
-// Aggiornare il display 
+// Update the display 
 function updateDisplay() {
     display.textContent = count;
 }
 
-// Eventi per aumentare \ decrementare il counter
+// Counter increase / decrease events
 buttonPlus.addEventListener("click", incrementCounter);
 buttonMinus.addEventListener("click", decrementCounter);
 buttonReset.addEventListener("click", reset);
@@ -37,7 +37,7 @@ function reset() {
     changeBackgroundColor();
 }
 
-// Eventi per colori background e ombre
+// Events for background colors and shadows
 
 const colors = [
  "#4A6CFC",
