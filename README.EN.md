@@ -13,7 +13,7 @@
 ☁️  [Connect with me](#connect-with-me)
 
 ## About
-*Count the clouds* was born as a project for the Javascript Basics course at Start2Impact University.<br>
+*Count the clouds* was born as a project for the Javascript Basics course at start2impact University.<br>
 The goal of the project was to develop a JavaScript application that allows the user to increase and decrease the value of a counter. The application had to be developed using only pure JavaScript, without the use of any frameworks.
 I chose to transform the simple counter into a small celestial observatory, where each click is like capturing a passing cloud.
 
@@ -28,7 +28,7 @@ How to count the clouds:
 3. **Restart the observation** 🔄
    - The "Reset" button is your new beginning!
    - Press it to:
-     - Reset the counter, as at the start of a new observation session.
+     - Reset the counter.
      - Change the background color.
 
 ## Coding
