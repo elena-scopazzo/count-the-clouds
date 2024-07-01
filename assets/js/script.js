@@ -16,8 +16,22 @@ function updateDisplay() {
 
 // Counter increase / decrease events
 buttonPlus.addEventListener("click", incrementCounter);
+buttonPlus.addEventListener("touchstart", function(e) {
+    e.preventDefault(); 
+    incrementCounter();
+});
+
 buttonMinus.addEventListener("click", decrementCounter);
+buttonMinus.addEventListener("touchstart", function(e) {
+    e.preventDefault();
+    decrementCounter();
+});
+
 buttonReset.addEventListener("click", reset);
+buttonReset.addEventListener("touchstart", function(e) {
+    e.preventDefault();
+    reset();
+});
 
 function incrementCounter() {
     count++;
@@ -52,14 +66,11 @@ function changeBackgroundColor() {
     const newColor = colors[currentColorIndex];
     const gradient = `linear-gradient(to bottom, ${newColor} 20%, #fff 100%)`;
     document.body.style.background = gradient;
-    document.body.style.display = gradient;
-    document.body.style.title = gradient;
     updateButtonColors(newColor);
     
 }
 
 function updateButtonColors(color) {
-    const buttons = document.querySelectorAll('.button');
     buttons.forEach(button => {
         button.style.boxShadow = `0 0.2em ${color}`;
     });
