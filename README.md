@@ -12,22 +12,22 @@
 ☁️  [Connect with me](#connect-with-me)
 
 ## About
-*Count the cloud* nasce come progetto per il corso di Javascript Basics di start2Iimpact University.<br>
+*Count the clouds* nasce come progetto per il corso di Javascript Basics di start2Iimpact University.<br>
 L'obiettivo del progetto era sviluppare un'applicazione JavaScript che permetta all'utente di aumentare e decrementare il valore del contatore. L'applicazione doveva essere sviluppata utilizzando solo JavaScript puro, senza l'utilizzo di alcun framework. 
 Io ho scelto di trasformare il semplice contatore in un piccolo osservatorio celeste, dove ogni click è come catturare una nuvola passeggera.
 
 ## Instructions
 Come contare le nuvole:
 
-1. **Conta una Nuvola** ☁️➕
+1. **Conta una nuvola** ☁️➕
    - Quando vedi una nuvola passare, premi il pulsante "+" per contarla.
    - Guarda il contatore salire e tieni traccia del cielo!
 
-2. **Correggi il Conteggio** ☁️➖
+2. **Correggi il conteggio** ☁️➖
    - Se hai contato per sbaglio, usa il pulsante "-" per correggere.
    - Il contatore diminuirà, permettendoti di mantenere un conteggio accurato.
 
-3. **Ricomincia l'Osservazione** 🔄
+3. **Ricomincia l'osservazione** 🔄
    - Il pulsante "Reset" è il tuo nuovo inizio!
    - Premilo per:
      - Azzerare il contatore, come all'inizio di una nuova sessione di osservazione.
