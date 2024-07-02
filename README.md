@@ -31,7 +31,7 @@ Come contare le nuvole:
    - Il pulsante "Reset" è il tuo nuovo inizio!
    - Premilo per:
      - Azzerare il contatore.
-     - Cambiare il colore di sfondo.
+     - Cambiare il colore del cielo.
 
 ## Coding
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
