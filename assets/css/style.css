@@ -211,3 +211,21 @@ body {
  2px 2px 0 #808080;
 
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 480px) { 
+  
+  #clouds-section {
+padding-top: 20%;
+}
+
+.title {
+  font-size: 4vh;
+}
+
+.display {
+  font-size: 6vh;
+
+}
+}
