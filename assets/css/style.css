@@ -147,6 +147,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   font-family: "Pokemon GB", sans-serif;
   font-size: 4.5vh;
