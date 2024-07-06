@@ -35,7 +35,7 @@ body {
 /* CLOUDS SECTION */
 
 #clouds-section {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
@@ -141,6 +141,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center; 
 }
 
 .title {
@@ -183,21 +184,20 @@ body {
 .button {
   font-family: "VT323", monospace;
   text-align: center;
-	margin:5px;
-  padding: 9px 30px ;
+  margin: 5px;
+  padding: 9px 30px;
   background-color: rgba(255, 255, 255, 0.8);
   color: #787879;
-	border-radius: 7px;
+  border-radius: 7px;
   cursor: pointer;
   border-color: #787879;
   font-size: 30px;
-
 }
 
 .button:active {
   box-shadow: none;
-	position: relative;
-	top: .2em;
+  position: relative;
+  top: .2em;
 }
 
 .display {
@@ -205,29 +205,39 @@ body {
   font-family: "Bitmgothic";
   margin-top: 5%;
   margin-bottom: 5%;
- color: #ffffff;
- text-shadow: 
- -2px -2px 0 #808080,  
- 2px -2px 0 #808080,
- -2px 2px 0 #808080,
- 2px 2px 0 #808080;
-
+  color: #ffffff;
+  text-shadow: 
+    -2px -2px 0 #808080,  
+    2px -2px 0 #808080,
+    -2px 2px 0 #808080,
+    2px 2px 0 #808080;
 }
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 480px) { 
-  
+@media screen and (max-width: 480px) {
   #clouds-section {
-padding-top: 20%;
-}
+    padding-top: 25%;
+  }
 
-.title {
-  font-size: 4vh;
-}
 
-.display {
-  font-size: 6vh;
+  .title {
+    font-size: 4vh;
+    margin-left: auto; 
+    margin-right: auto; 
+  }
 
-}
+  .display {
+    font-size: 6vh;
+  }
+
+  @keyframes moveclouds {
+    0% {
+      left: 95%;
+    }
+
+    100% {
+      left: -80%;
+    }
+  }
 }
