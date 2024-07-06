@@ -1,15 +1,34 @@
-// DOM Elemnts
-const display = document.querySelector(".display");
-const buttonMinus = document.querySelector(".button.minus"); 
-const buttonPlus = document.querySelector(".button.plus"); 
-const buttonReset = document.querySelector(".button.reset"); 
-const buttons = document.querySelectorAll(".button");
+// DOM elements
+const counterContainer = document.querySelector(".counter-container")
 
+const display = document.createElement("div");
+display.classList.add("display");
+display.textContent = "0";
+counterContainer.appendChild(display);
+
+const buttonContainer = document.createElement("div");
+buttonContainer.classList.add("button-container");
+counterContainer.appendChild(buttonContainer);
+
+const buttonMinus = document.createElement("button");
+buttonMinus.classList.add("button", "minus");
+buttonMinus.textContent = "-";
+buttonContainer.appendChild(buttonMinus);
+
+buttonReset = document.createElement("button");
+buttonReset.classList.add("button", "reset");
+buttonReset.textContent = "RESET";
+buttonContainer.appendChild(buttonReset);
+
+buttonPlus = document.createElement("button");
+buttonPlus.classList.add("button", "plus");
+buttonPlus.textContent = "+";
+buttonContainer.appendChild(buttonPlus)
 
 let count = 0;
 let currentColorIndex = 0;
 
-// Update the display 
+// Update the display
 function updateDisplay() {
     display.textContent = count;
 }
@@ -17,7 +36,7 @@ function updateDisplay() {
 // Counter increase / decrease events
 buttonPlus.addEventListener("click", incrementCounter);
 buttonPlus.addEventListener("touchstart", function(e) {
-    e.preventDefault(); 
+    e.preventDefault();
     incrementCounter();
 });
 
@@ -40,9 +59,9 @@ function incrementCounter() {
 
 function decrementCounter() {
     if (count > 0) {
-    count--;
-    updateDisplay();
-    } 
+        count--;
+        updateDisplay();
+    }
 }
 
 function reset() {
@@ -52,13 +71,12 @@ function reset() {
 }
 
 // Events for background colors and shadows
-
 const colors = [
- "#4A6CFC",
- "#8f8ff2",
-"#FF9966",
-"#5EBAA0",
-"#D797E7"
+    "#4A6CFC",
+    "#8f8ff2",
+    "#FF9966",
+    "#5EBAA0",
+    "#D797E7"
 ];
 
 function changeBackgroundColor() {
@@ -67,15 +85,13 @@ function changeBackgroundColor() {
     const gradient = `linear-gradient(to bottom, ${newColor} 20%, #fff 100%)`;
     document.body.style.background = gradient;
     updateButtonColors(newColor);
-    
 }
 
 function updateButtonColors(color) {
-    buttons.forEach(button => {
+    [buttonMinus, buttonPlus, buttonReset].forEach(button => {
         button.style.boxShadow = `0 0.2em ${color}`;
     });
 }
 
 changeBackgroundColor();
-
 updateDisplay();
